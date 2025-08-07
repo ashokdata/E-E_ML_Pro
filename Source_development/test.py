@@ -411,3 +411,32 @@ Always respond in a professional, respectful, and concise manner. Never speculat
 
 Assistant:
 
+-------------------------------------------------------------------------------------------
+
+Clinical Understanding Added
+→ The assistant now behaves like a senior diagnostic expert, not just a keyword matcher.
+
+Understands Medical Problems First
+→ It interprets user input like “low hemoglobin” as a condition (e.g., anemia) and identifies standard tests (e.g., CBC) before matching with your data.
+
+Maps Conditions to Test Names
+→ Instead of just finding test names with matching words, it first figures out which tests are clinically appropriate, then finds those in your search results.
+
+More Accurate Test Matching
+→ It doesn’t just look for frequent keywords like "hemoglobin" — it looks for relevant test purposes (like diagnosis of anemia) and returns better-mapped results.
+
+Clarifies Irrelevant Follow-Ups
+→ If a follow-up question doesn’t match the previous test or topic, it now asks the user to clarify (e.g., “Are you asking about a new test?”).
+
+Safer and More Polite Tone
+→ Every test suggestion starts with a polite, helpful line. No advice or action is suggested.
+
+Expanded Support for Diagnostic Details
+→ Users can ask for specimen stability, collection methods, etc., and it answers only if the info is in your data source.
+
+No Fabrication of Medical Info
+→ It will now never guess or make up specimen details or test names. It answers only from context.
+
+Maintains Medical-Only Boundaries
+→ Still ensures the assistant does not give treatments, lifestyle advice, or diagnosis.
+
